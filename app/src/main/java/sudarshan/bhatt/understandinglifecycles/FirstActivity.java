@@ -33,11 +33,11 @@ public class FirstActivity extends AppCompatActivity {
         setContentView(R.layout.activity_first);
 
         Log.i(tag, "onCreate");
-        popup();
+//        popup();
 //        startActivity(new Intent(this, SecondActivity.class));
     }
 
-    public void popup(){
+    public void popup(View v){
         AlertDialog.Builder builder = new AlertDialog.Builder(FirstActivity.this);
         builder.setPositiveButton("Hello There", new DialogInterface.OnClickListener() {
             @Override
